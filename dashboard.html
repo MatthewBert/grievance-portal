@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Grievance</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="grievance-form-container">
+    <h2>Submit a Grievance</h2>
+    <form id="grievance-form">
+      <label for="title">Title:</label>
+      <input type="text" id="title" required />
+
+      <label for="description">What's bothering you?</label>
+      <textarea id="description" rows="4" required></textarea>
+
+      <label for="mood">Mood:</label>
+      <select id="mood">
+        <option value="😐">😐 Neutral</option>
+        <option value="😤">😤 Frustrated</option>
+        <option value="😭">😭 Sad</option>
+        <option value="😡">😡 Angry</option>
+        <option value="🤯">🤯 Exploding</option>
+      </select>
+
+      <label for="severity">Severity:</label>
+      <select id="severity">
+        <option value="minor">"A sweet treat would fix this."</option>
+        <option value="moderate">"I need to scream into a pillow."</option>
+        <option value="serious">"Burn it all down."</option>
+      </select>
+
+      <button type="submit">Submit Grievance</button>
+    </form>
+  </main>
+</body>
+</html>
